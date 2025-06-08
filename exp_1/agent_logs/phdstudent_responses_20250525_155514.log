@@ -1,0 +1,37 @@
+=== Interaction 1 ===
+Response:
+```SUMMARY
+real-time edge image classification optimization
+```
+
+=== Interaction 2 ===
+Response:
+```FULL_TEXT
+2409.08943v1
+```
+
+=== Interaction 3 ===
+Response:
+```SUMMARY
+edge device image classification optimization
+```
+
+=== Interaction 4 ===
+Response:
+```FULL_TEXT
+2307.04443v1
+```
+
+=== Interaction 5 ===
+Response:
+```ADD_PAPER
+2409.08943v1
+This paper presents a novel approach for joint image denoising and classification optimized for edge devices. The authors propose an integrated architecture that shares an encoder between denoising and classification tasks, along with modifications to Neural Architecture Search (NAS) to optimize for target latency, accuracy, and denoising performance. Key experimental results show their NAS-designed models outperform manually designed alternatives, achieving 25.6 PSNR for denoising and 76.0% accuracy for classification on ImageNet-100 with 13.7ms latency. The integrated approach demonstrates superior human perception benefits compared to sequential models, particularly in noisy conditions.
+```
+
+=== Interaction 6 ===
+Response:
+```SUMMARY
+edge AI model compression for image classification
+```
+

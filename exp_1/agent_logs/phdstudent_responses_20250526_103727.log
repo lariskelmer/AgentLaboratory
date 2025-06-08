@@ -1,0 +1,279 @@
+=== Interaction 1 ===
+Response:
+```SUMMARY
+edge device deep learning optimization
+```
+
+=== Interaction 2 ===
+Response:
+```FULL_TEXT
+2009.00278v3
+```
+
+=== Interaction 3 ===
+Response:
+```ADD_PAPER
+2009.00278v3
+This paper presents two novel approaches for scaling up deep neural network (DNN) optimization for edge inference. The first approach reuses performance predictors built on a proxy device and leverages performance monotonicity to avoid rebuilding predictors for each new device. The second approach builds scalable performance predictors that estimate accuracy/latency/energy for any DNN-device pair, and uses a neural network-based optimizer to directly output optimal DNN designs. Experimental results show these methods significantly reduce optimization time while maintaining model performance across diverse edge devices.
+```
+
+=== Interaction 4 ===
+Response:
+```SUMMARY
+edge device real-time image classification optimization
+```
+
+=== Interaction 5 ===
+Response:
+```FULL_TEXT
+2409.08943v1
+```
+
+=== Interaction 6 ===
+Response:
+```ADD_PAPER
+2409.08943v1
+This paper presents a novel approach for joint image denoising and classification optimized for edge devices. The authors propose an integrated architecture that shares an encoder between denoising and classification tasks, along with modifications to Neural Architecture Search (NAS) to optimize for target latency, classification accuracy, and denoising performance. Experimental results show their NAS-designed models outperform manually designed alternatives, achieving significant improvements in both denoising (25.6dB PSNR) and classification (76% accuracy) while meeting real-time latency constraints (10-18ms). The approach demonstrates particular effectiveness in noisy environments common to edge applications like surveillance and medical imaging.
+```
+
+=== Interaction 7 ===
+Response:
+```SUMMARY
+edge device neural architecture search latency optimization
+```
+
+=== Interaction 8 ===
+Response:
+```SUMMARY
+edge device real-time inference optimization
+```
+
+=== Interaction 9 ===
+Response:
+```SUMMARY
+edge device energy-efficient deep learning
+```
+
+=== Interaction 10 ===
+Response:
+```FULL_TEXT
+2306.01811v3
+```
+
+=== Interaction 11 ===
+Response:
+```ADD_PAPER
+2306.01811v3
+DVFO is a novel DVFS-enabled edge-cloud collaborative inference framework that co-optimizes hardware frequencies (CPU/GPU/memory) and feature map offloading via deep reinforcement learning. Key innovations include: 1) A thinking-while-moving concurrent mechanism to accelerate DRL policy inference, 2) A spatial-channel attention module to identify primary/secondary importance features for efficient offloading, and 3) Joint optimization of DVFS and offloading parameters. Experiments on CIFAR-100 and ImageNet show DVFO reduces energy consumption by 33% and latency by 28.6-59.1% compared to state-of-the-art, while maintaining accuracy within 1% loss.
+```
+
+=== Interaction 12 ===
+Response:
+```SUMMARY
+edge device neural architecture search for image classification
+```
+
+=== Interaction 13 ===
+Response:
+```SUMMARY
+edge device real-time image classification optimization
+```
+
+=== Interaction 14 ===
+Response:
+```SUMMARY
+edge device efficient neural architecture search for image classification
+```
+
+=== Interaction 15 ===
+Response:
+```FULL_TEXT
+2307.04443v1
+```
+
+=== Interaction 16 ===
+Response:
+```ADD_PAPER
+2307.04443v1
+This paper presents DCA-NAS, a device constraints-aware neural architecture search framework that efficiently discovers architectures optimized for edge devices' memory and computational constraints. The method incorporates hardware metrics (FLOPs/model size) directly into the optimization objective using a differentiable constraint formulation. Key innovations include weight sharing, channel bottlenecks, and derived cells to reduce search time. Experiments on CIFAR-10, TinyImagenet and ImageNet show DCA-NAS achieves comparable accuracy to state-of-the-art methods while discovering models 15x smaller than manual designs. The approach reduces search time by 4-17x compared to prior hardware-aware NAS methods while maintaining model quality.
+```
+
+=== Interaction 17 ===
+Response:
+```SUMMARY
+edge device collaborative inference optimization
+```
+
+=== Interaction 18 ===
+Response:
+```SUMMARY
+edge device real-time image classification energy efficiency
+```
+
+=== Interaction 19 ===
+Response:
+```SUMMARY
+edge device DNN acceleration techniques
+```
+
+=== Interaction 20 ===
+Response:
+```SUMMARY
+edge device model compression for real-time inference
+```
+
+=== Interaction 21 ===
+Response:
+```SUMMARY
+edge device efficient DNN deployment techniques
+```
+
+=== Interaction 22 ===
+Response:
+```FULL_TEXT
+2309.01824v1
+```
+
+=== Interaction 23 ===
+Response:
+```SUMMARY
+edge device neural architecture search for real-time image classification
+```
+
+=== Interaction 24 ===
+Response:
+```FULL_TEXT
+2409.08943v1
+```
+
+=== Interaction 25 ===
+Response:
+```ADD_PAPER
+2409.08943v1
+This paper presents a novel approach for joint image denoising and classification optimized for edge devices. The authors propose an integrated architecture that shares an encoder between denoising and classification tasks, significantly improving efficiency compared to sequential approaches. They modify a Neural Architecture Search (NAS) method to optimize for target latency, classification accuracy, and denoising performance simultaneously. Experimental results demonstrate that their NAS-designed models outperform manually designed alternatives, achieving better denoising quality (25.4 PSNR) and classification accuracy (76%) while meeting real-time latency constraints (13.7ms). The approach is particularly valuable for applications like surveillance systems where both automated classification and human verification of denoised images are required.
+```
+
+=== Interaction 26 ===
+Response:
+```SUMMARY
+edge device DNN optimization for real-time inference
+```
+
+=== Interaction 27 ===
+Response:
+```FULL_TEXT
+2306.01811v3
+```
+
+=== Interaction 28 ===
+Response:
+```ADD_PAPER
+2306.01811v3
+This paper presents DVFO, a novel DVFS-enabled edge-cloud collaborative inference framework that co-optimizes hardware frequencies (CPU, GPU, memory) and feature map offloading using deep reinforcement learning. The approach incorporates a thinking-while-moving concurrent mechanism for faster DRL learning and a spatial-channel attention mechanism for efficient feature map selection. Experiments on CIFAR-100 and ImageNet datasets with six DNN models show DVFO reduces energy consumption by 33% on average while maintaining accuracy within 1% loss, achieving 28.6%-59.1% latency reduction compared to state-of-the-art methods. The framework is particularly effective for balancing energy-latency tradeoffs in real-time edge inference scenarios.
+```
+
+=== Interaction 29 ===
+Response:
+```SUMMARY
+edge device neural architecture search for low-power image classification
+```
+
+=== Interaction 30 ===
+Response:
+```FULL_TEXT
+2307.04443v1
+```
+
+=== Interaction 31 ===
+Response:
+```ADD_PAPER
+2307.04443v1
+This paper presents DCA-NAS, a device constraints-aware neural architecture search framework that efficiently discovers architectures optimized for edge devices' memory and computational constraints. The method incorporates hardware constraints directly into the NAS objective function using a differentiable approach with minimal hyperparameter tuning. Key innovations include weight sharing among operations, channel bottleneck techniques, and derived cells to reduce search time. Experiments on CIFAR-10, TinyImagenet and ImageNet show DCA-NAS achieves 4-17x faster search than prior hardware-aware NAS methods while discovering models 10-15x smaller than manual architectures with comparable accuracy. The framework demonstrates strong transferability across datasets and maintains performance under strict resource constraints.
+```
+
+=== Interaction 32 ===
+Response:
+```SUMMARY
+edge device efficient image classification with early exits
+```
+
+=== Interaction 33 ===
+Response:
+```FULL_TEXT
+2401.10541v1
+```
+
+=== Interaction 34 ===
+Response:
+```ADD_PAPER
+2401.10541v1
+This paper presents I-SplitEE, a novel approach combining split computing and early exits for efficient DNN inference on edge devices. The method dynamically selects the optimal splitting layer between edge and cloud based on input image characteristics and network conditions. Key innovations include: 1) An online unsupervised algorithm using multi-armed bandits to adapt to changing data distributions (e.g., image distortions), 2) Joint optimization of computational and communication costs while maintaining accuracy, and 3) A threshold-based early exit mechanism at the splitting layer. Experiments on Caltech-256 and CIFAR-10 show I-SplitEE reduces costs by 55-65% with only 2-5% accuracy drop compared to full cloud inference. The approach demonstrates robustness across different network conditions and distortion levels.
+```
+
+=== Interaction 35 ===
+Response:
+```SUMMARY
+edge device DNN quantization techniques for image classification
+```
+
+=== Interaction 36 ===
+Response:
+```SUMMARY
+edge device neural architecture search for low-power image classification
+```
+
+=== Interaction 37 ===
+Response:
+```SUMMARY
+edge device DNN optimization techniques for real-time image classification
+```
+
+=== Interaction 38 ===
+Response:
+```SUMMARY
+edge device real-time image classification optimization techniques
+```
+
+=== Interaction 39 ===
+Response:
+```FULL_TEXT
+2409.08943v1
+```
+
+=== Interaction 40 ===
+Response:
+```SUMMARY
+edge device DNN optimization for low-power image classification
+```
+
+=== Interaction 41 ===
+Response:
+```SUMMARY
+edge device efficient DNN deployment techniques
+```
+
+=== Interaction 42 ===
+Response:
+```FULL_TEXT
+2309.01824v1
+```
+
+=== Interaction 43 ===
+Response:
+```SUMMARY
+edge device DNN optimization techniques for image classification
+```
+
+=== Interaction 44 ===
+Response:
+```FULL_TEXT
+2403.07036v1
+```
+
+=== Interaction 45 ===
+Response:
+```ADD_PAPER
+2403.07036v1
+This paper presents CBNet, a novel framework for efficient DNN inference on edge devices that combines a "converting" autoencoder with a lightweight DNN. The key innovation is an autoencoder that transforms hard-to-classify images into easier versions while preserving class information, enabling faster inference through a truncated network. Experimental results on MNIST, Fashion-MNIST, and Kuzushiji-MNIST datasets show significant improvements: up to 4.8x speedup in inference latency and 79% reduction in energy usage compared to baseline methods while maintaining accuracy. The framework demonstrates particular effectiveness on resource-constrained devices like Raspberry Pi 4, where it achieves 6.75-6.87x speedup over baseline models. The paper provides comprehensive evaluations across different hardware platforms and analyzes the tradeoffs between accuracy and efficiency.
+```
+

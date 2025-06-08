@@ -1,0 +1,16 @@
+=== Interaction 1 ===
+Response:
+```SEARCH_HF
+CIFAR-10-C
+```
+
+=== Interaction 2 ===
+Response:
+```python
+import datasets
+cifar10 = datasets.load_dataset("cifar10")
+print("CIFAR-10 loaded successfully!")
+print(f"Training set size: {len(cifar10['train'])} images")
+print(f"Test set size: {len(cifar10['test'])} images")
+```
+

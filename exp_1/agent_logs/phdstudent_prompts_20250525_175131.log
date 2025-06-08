@@ -1,0 +1,4 @@
+=== Interaction 1 ===
+Prompt:
+\n~~~~~~~~~~\nHistory: \n~~~~~~~~~~\nCurrent Step #0, Phase: literature review\n\n[Objective] Your goal is to perform research on the following topic: The goal is to design and evaluate a new technique for optimizing deep learning models for real-time image classification on resource-constrained edge devices, aiming to maximize accuracy while minimizing inference latency and power consumption.\nFeedback: \nNotes: \nYour previous command was: . Make sure your new output is very different.\nPlease produce a single command below:\n
+

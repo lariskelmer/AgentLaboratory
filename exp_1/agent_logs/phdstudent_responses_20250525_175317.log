@@ -1,0 +1,50 @@
+=== Interaction 1 ===
+Response:
+```SUMMARY
+real-time edge image classification optimization
+```
+
+=== Interaction 2 ===
+Response:
+```FULL_TEXT
+2409.08943v1
+```
+
+=== Interaction 3 ===
+Response:
+```ADD_PAPER
+2409.08943v1
+This paper presents a novel architecture that jointly combines image denoising and classification for edge devices. The authors propose an integrated model where a shared encoder is used for both tasks, optimized via Neural Architecture Search (NAS) to meet target latency, classification accuracy, and denoising performance. Key experimental results show the NAS-designed models outperform manually designed alternatives, achieving 76.4% classification accuracy and 25.2 PSNR on ImageNet100 with noise, while meeting real-time latency constraints (17.9ms on RTX 3090). The integrated approach demonstrates superior denoising quality compared to sequential models, particularly important for human verification in applications like medical imaging and surveillance.
+```
+
+=== Interaction 4 ===
+Response:
+```SUMMARY
+edge device real-time image classification optimization
+```
+
+=== Interaction 5 ===
+Response:
+```FULL_TEXT
+2211.09897v1
+```
+
+=== Interaction 6 ===
+Response:
+```ADD_PAPER
+2211.09897v1
+This paper presents an efficient feature compression system for edge-cloud image classification, addressing the three-way trade-off between bit rate, classification accuracy, and encoding complexity (RAC). The authors propose a flexible encoder architecture with residual blocks and 8× downsampling that can be scaled based on device capabilities. Key results show their method achieves 0.93% higher accuracy than prior work (Entropic Student) while reducing encoding latency by 51.4% (6.7ms vs 13.8ms on CPU). The system outperforms traditional image codecs (WebP, BPG) and learned compression methods across various bit rates, demonstrating effective optimization for resource-constrained edge devices.
+```
+
+=== Interaction 7 ===
+Response:
+```SUMMARY
+neural architecture search edge image classification
+```
+
+=== Interaction 8 ===
+Response:
+```FULL_TEXT
+2307.04443v1
+```
+

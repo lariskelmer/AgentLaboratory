@@ -1,0 +1,163 @@
+import torch
+import torch.nn as nn
+import torch.optim as optim
+import numpy as np
+import matplotlib.pyplot as plt
+import time
+import psutil
+from tqdm import tqdm
+from torchvision.transforms import ToTensor
+
+# Device configuration
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+print(f'''Using device: {device}''')
+
+# Hyperparameters (reduced for faster execution)
+batch_size = 16
+learning_rate = 0.001
+num_epochs = 5  # Reduced from 10
+num_classes = 100
+patch_sizes = [8, 16]  # Reduced from [4,8,16]
+exit_points = [3, 6]   # Reduced from [3,6,9]
+
+# Simplified DynamicViT with fewer layers
+class DynamicViT(nn.Module):
+    def __init__(self):
+        super(DynamicViT, self).__init__()
+        self.patch_embed = nn.Conv2d(3, 96, kernel_size=16, stride=16)  # Reduced channels
+        self.cls_token = nn.Parameter(torch.zeros(1, 1, 96))
+        self.pos_embed = nn.Parameter(torch.zeros(1, 197, 96))
+        
+        # Fewer transformer layers (6 instead of 12)
+        self.layers = nn.ModuleList([
+            nn.TransformerEncoderLayer(d_model=96, nhead=3) for _ in range(6)
+        ])
+        
+        # Early exit classifiers
+        self.exit_classifiers = nn.ModuleList([
+            nn.Linear(96, num_classes) for _ in range(len(exit_points))
+        ])
+        
+        # Final classifier
+        self.final_classifier = nn.Linear(96, num_classes)
+        
+    def set_configuration(self, patch_size, active_heads, exit_point):
+        # Update patch embedding
+        self.patch_embed = nn.Conv2d(3, 96, kernel_size=patch_size, stride=patch_size)
+        
+        # Update attention heads (simplified - same for all layers)
+        for layer in self.layers:
+            layer.self_attn.num_heads = active_heads[0]  # Use first value only
+    
+    def forward(self, x):
+        B = x.shape[0]
+        x = self.patch_embed(x).flatten(2).transpose(1, 2)
+        x = torch.cat((self.cls_token.expand(B, -1, -1), x), dim=1)
+        x = x + self.pos_embed
+        
+        for i, layer in enumerate(self.layers):
+            x = layer(x)
+            if hasattr(self, 'exit_point') and i+1 in exit_points:
+                exit_idx = exit_points.index(i+1)
+                if exit_idx == self.exit_point:
+                    return self.exit_classifiers[exit_idx](x[:, 0])
+        
+        return self.final_classifier(x[:, 0])
+
+# Simplified ResourceController
+class ResourceController:
+    def decide_configuration(self):
+        cpu = psutil.cpu_percent()/100
+        mem = psutil.virtual_memory().percent/100
+        
+        if cpu < 0.4 and mem < 0.6:
+            return 8, [2]*6, None  # More detailed processing
+        else:
+            return 16, [1]*6, 0    # Minimal processing
+
+# Training setup
+model = DynamicViT().to(device)
+controller = ResourceController()
+criterion = nn.CrossEntropyLoss()
+optimizer = optim.Adam(model.parameters(), lr=learning_rate)
+
+# Convert PIL Images to tensors before stacking
+to_tensor = ToTensor()
+train_images = torch.stack([to_tensor(sample["image"]) for sample in train_samples[:100]])
+train_labels = torch.tensor([sample["label"] for sample in train_samples[:100]])
+test_images = torch.stack([to_tensor(sample["image"]) for sample in test_samples[:50]])
+test_labels = torch.tensor([sample["label"] for sample in test_samples[:50]])
+
+# Training loop
+print('''Starting training with simplified dynamic configuration...''')
+train_losses = []
+train_accs = []
+test_accs = []
+
+for epoch in range(num_epochs):
+    model.train()
+    total_loss = 0
+    correct = 0
+    
+    for i in range(0, len(train_images), batch_size):
+        batch_images = train_images[i:i+batch_size].to(device)
+        batch_labels = train_labels[i:i+batch_size].to(device)
+        
+        # Get configuration
+        patch_size, heads, exit_point = controller.decide_configuration()
+        model.set_configuration(patch_size, heads, exit_point)
+        model.exit_point = exit_point
+        
+        # Forward + backward
+        outputs = model(batch_images)
+        loss = criterion(outputs, batch_labels)
+        optimizer.zero_grad()
+        loss.backward()
+        optimizer.step()
+        
+        # Track metrics
+        total_loss += loss.item()
+        correct += (outputs.argmax(1) == batch_labels).sum().item()
+    
+    # Evaluation
+    model.eval()
+    with torch.no_grad():
+        test_outputs = model(test_images.to(device))
+        test_acc = (test_outputs.argmax(1) == test_labels.to(device)).float().mean()
+    
+    # Store metrics
+    train_loss = total_loss / (len(train_images)/batch_size)
+    train_acc = correct / len(train_images)
+    train_losses.append(train_loss)
+    train_accs.append(train_acc)
+    test_accs.append(test_acc)
+    
+    print(f'''Epoch {epoch+1}: Loss={train_loss:.4f}, Train Acc={train_acc:.2%}, Test Acc={test_acc:.2%}''')
+
+# Generate figures
+plt.figure(figsize=(10, 4))
+plt.subplot(1, 2, 1)
+plt.plot(train_losses)
+plt.title('Training Loss')
+plt.xlabel('Epoch')
+
+plt.subplot(1, 2, 2)
+plt.plot(train_accs, label='Train')
+plt.plot(test_accs, label='Test')
+plt.title('Accuracy')
+plt.xlabel('Epoch')
+plt.legend()
+plt.tight_layout()
+plt.savefig('Figure_1.png')
+
+# Latency test
+model.eval()
+start = time.time()
+with torch.no_grad():
+    _ = model(test_images[:1].to(device))
+latency_ms = (time.time() - start) * 1000
+print(f'''Inference latency: {latency_ms:.2f} ms''')
+
+# Model size
+param_size = sum(p.numel() for p in model.parameters())
+print(f'''Model size: {param_size/1e6:.2f}M parameters''')

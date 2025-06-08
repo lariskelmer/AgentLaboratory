@@ -1,0 +1,62 @@
+=== Interaction 1 ===
+Response:
+```SUMMARY
+real-time edge image classification optimization
+```
+
+=== Interaction 2 ===
+Response:
+```FULL_TEXT
+2409.08943v1
+```
+
+=== Interaction 3 ===
+Response:
+```SUMMARY
+edge device image classification optimization
+```
+
+=== Interaction 4 ===
+Response:
+```FULL_TEXT
+2307.04443v1
+```
+
+=== Interaction 5 ===
+Response:
+```ADD_PAPER
+2409.08943v1
+This paper presents a novel approach for joint image denoising and classification optimized for edge devices. The authors propose an integrated architecture that shares an encoder between denoising and classification tasks, along with modifications to Neural Architecture Search (NAS) to optimize for target latency, accuracy, and denoising performance. Key experimental results show their NAS-designed models outperform manually designed alternatives, achieving 25.6 PSNR for denoising and 76.0% accuracy for classification on ImageNet-100 with 13.7ms latency. The integrated approach demonstrates superior human perception benefits compared to sequential models, particularly in noisy conditions.
+```
+
+=== Interaction 6 ===
+Response:
+```SUMMARY
+edge AI model compression for image classification
+```
+
+=== Interaction 7 ===
+Response:
+```FULL_TEXT
+2409.02134v1
+```
+
+=== Interaction 8 ===
+Response:
+```ADD_PAPER
+2409.02134v1
+This paper comprehensively evaluates model compression techniques (structured/unstructured pruning and dynamic quantization) for ConvNeXt models on edge devices. Key experimental results show: 1) OTOv3 structured pruning achieves 75% reduction in model size/parameters while maintaining accuracy; 2) Dynamic quantization achieves 95% parameter reduction with minimal accuracy drop; 3) Combined OTOv3+quantization yields 89.7% size reduction and 95% MACs reduction while improving accuracy by 3.8%. The compressed model demonstrates practical edge deployment with 92.5% accuracy and 20ms inference time on a laptop CPU.
+```
+
+=== Interaction 9 ===
+Response:
+```SUMMARY
+edge AI real-time image classification optimization
+```
+
+=== Interaction 10 ===
+Response:
+```FULL_TEXT
+2407.09562v3
+```
+

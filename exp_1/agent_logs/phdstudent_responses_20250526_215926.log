@@ -1,0 +1,246 @@
+=== Interaction 1 ===
+Response:
+```SUMMARY
+real-time edge image classification
+```
+
+=== Interaction 2 ===
+Response:
+```SUMMARY
+edge device deep learning optimization
+```
+
+=== Interaction 3 ===
+Response:
+```SUMMARY
+real-time edge image classification optimization
+```
+
+=== Interaction 4 ===
+Response:
+```FULL_TEXT
+2409.08943v1
+```
+
+=== Interaction 5 ===
+Response:
+```ADD_PAPER
+2409.08943v1
+This paper presents a novel approach for joint image denoising and classification optimized for edge devices. The authors propose an integrated architecture that shares an encoder between denoising and classification tasks, achieving better efficiency than sequential approaches. They modify a Neural Architecture Search (NAS) method to optimize for target latency, classification accuracy, and denoising performance simultaneously. Experimental results show their NAS-designed models outperform manually designed alternatives, with significant improvements in both denoising (25.6dB PSNR) and classification (76% accuracy) while maintaining real-time performance (13.7ms latency). The work demonstrates how edge-optimized architectures can balance computational constraints with perceptual quality for applications like surveillance and medical imaging.
+```
+
+=== Interaction 6 ===
+Response:
+```SUMMARY
+edge-optimized neural architecture search for image classification
+```
+
+=== Interaction 7 ===
+Response:
+```SUMMARY
+real-time image classification edge optimization techniques
+```
+
+=== Interaction 8 ===
+Response:
+```SUMMARY
+edge device deep learning model compression
+```
+
+=== Interaction 9 ===
+Response:
+```SUMMARY
+real-time edge image classification model optimization
+```
+
+=== Interaction 10 ===
+Response:
+```FULL_TEXT
+2208.00485v1
+```
+
+=== Interaction 11 ===
+Response:
+```ADD_PAPER
+2208.00485v1
+This paper presents a DQN-based adaptive edge offloading policy for image classification under token bucket rate constraints. The system uses a weak classifier on edge devices and can offload uncertain classifications to a stronger cloud model. The DQN policy learns to optimize offloading decisions by considering image arrival patterns, classification confidence correlations, and token bucket states. Experiments show the policy achieves 2.86× speedup at 1.0G FLOPs for ResNet50 while maintaining accuracy, with the DQN adding only 0.25ms overhead (1% of local inference time). The approach demonstrates effective real-time optimization under resource constraints.
+```
+
+=== Interaction 12 ===
+Response:
+```SUMMARY
+edge-optimized image classification model compression techniques
+```
+
+=== Interaction 13 ===
+Response:
+```SUMMARY
+real-time edge image classification model compression
+```
+
+=== Interaction 14 ===
+Response:
+```FULL_TEXT
+2409.02134v1
+```
+
+=== Interaction 15 ===
+Response:
+```ADD_PAPER
+2409.02134v1
+This paper evaluates model compression techniques (structured/unstructured pruning and dynamic quantization) on ConvNeXt models for edge deployment. Key results show: 1) OTOv3 pruning achieves 60-75% reductions in model size/parameters/MACs while increasing accuracy by 3.8% on CIFAR-10; 2) Dynamic quantization provides 71% size reduction and 95% parameter/MAC reduction with minimal accuracy loss; 3) Combined OTOv3+quantization achieves 89.7% size reduction and 95% parameter/MAC reduction while improving accuracy. The compressed model demonstrated 92.5% accuracy at 20ms inference time on edge hardware, validating effectiveness for real-time applications.
+```
+
+=== Interaction 16 ===
+Response:
+```SUMMARY
+edge-optimized real-time image classification architectures
+```
+
+=== Interaction 17 ===
+Response:
+```SUMMARY
+lightweight CNN architectures for edge image classification
+```
+
+=== Interaction 18 ===
+Response:
+```SUMMARY
+real-time edge image classification model compression and optimization
+```
+
+=== Interaction 19 ===
+Response:
+```SUMMARY
+edge-optimized real-time image classification with model compression
+```
+
+=== Interaction 20 ===
+Response:
+```SUMMARY
+edge device real-time image classification optimization techniques
+```
+
+=== Interaction 21 ===
+Response:
+```FULL_TEXT
+2307.04443v1
+```
+
+=== Interaction 22 ===
+Response:
+```ADD_PAPER
+2307.04443v1
+This paper presents DCA-NAS, a device constraints-aware neural architecture search framework that optimizes deep learning models for edge devices with specific memory and computational constraints. The method incorporates weight sharing and channel bottleneck techniques to reduce search time while maintaining performance. Experiments on CIFAR-10, TinyImagenet and ImageNet show DCA-NAS can discover models 10-15x smaller than manual architectures with similar accuracy, while reducing search time by 4-17x compared to prior hardware-aware NAS approaches. Key results include 97.2% accuracy on CIFAR-10 with 3.4M parameters (1.37 GPU hours search time) and 24.4% top-1 error on ImageNet with 5.3M parameters (1.9 GPU hours search time).
+```
+
+=== Interaction 23 ===
+Response:
+```SUMMARY
+edge-optimized neural networks for low-power image classification
+```
+
+=== Interaction 24 ===
+Response:
+```SUMMARY
+edge device image classification model compression energy efficiency
+```
+
+=== Interaction 25 ===
+Response:
+```SUMMARY
+energy-efficient edge image classification with model compression
+```
+
+=== Interaction 26 ===
+Response:
+```SUMMARY
+edge device image classification with energy-aware model compression
+```
+
+=== Interaction 27 ===
+Response:
+```SUMMARY
+edge image classification model optimization for energy efficiency
+```
+
+=== Interaction 28 ===
+Response:
+```FULL_TEXT
+2409.08943v1
+```
+
+=== Interaction 29 ===
+Response:
+```ADD_PAPER
+2409.08943v1
+This paper presents a novel approach for joint image denoising and classification optimized for edge devices. The authors propose an integrated architecture that shares an encoder between denoising and classification tasks, significantly improving efficiency compared to sequential approaches. Through extensive experiments, they demonstrate that their Neural Architecture Search (NAS)-optimized models achieve superior performance in both tasks while meeting strict latency constraints. Key results show their DC-NAS model achieves 76% classification accuracy on ImageNet-100 with 13.7ms latency while maintaining high denoising quality (25.4 PSNR). The work provides important insights into optimizing multi-task vision models for resource-constrained edge deployment.
+```
+
+=== Interaction 30 ===
+Response:
+```SUMMARY
+edge image classification model quantization techniques
+```
+
+=== Interaction 31 ===
+Response:
+```SUMMARY
+efficient edge image classification with neural architecture search
+```
+
+=== Interaction 32 ===
+Response:
+```SUMMARY
+edge image classification hardware-aware neural architecture search
+```
+
+=== Interaction 33 ===
+Response:
+```SUMMARY
+edge image classification model compression for low-power devices
+```
+
+=== Interaction 34 ===
+Response:
+```SUMMARY
+edge image classification with hardware-efficient neural networks
+```
+
+=== Interaction 35 ===
+Response:
+```SUMMARY
+edge-optimized neural networks for real-time image classification
+```
+
+=== Interaction 36 ===
+Response:
+```SUMMARY
+real-time image classification on edge devices with model compression
+```
+
+=== Interaction 37 ===
+Response:
+```FULL_TEXT
+2409.02134v1
+```
+
+=== Interaction 38 ===
+Response:
+```ADD_PAPER
+2409.02134v1
+This paper evaluates model compression techniques (structured/unstructured pruning and dynamic quantization) on ConvNeXt models for edge image classification. Key results show: 1) OTOV3 pruning achieves 75% model size reduction while increasing accuracy by 3.8% on CIFAR-10; 2) Dynamic quantization reduces parameters by 95% with minimal accuracy loss; 3) Combined OTOV3+quantization achieves 89.7% size reduction while improving accuracy. The compressed model demonstrates 92.5% accuracy with 20ms inference time on edge hardware, validating effectiveness for resource-constrained deployment.
+```
+
+=== Interaction 39 ===
+Response:
+```SUMMARY
+edge image classification with spiking neural networks for energy efficiency
+```
+
+=== Interaction 40 ===
+Response:
+```SUMMARY
+energy-efficient edge image classification with attention mechanisms
+```
+
