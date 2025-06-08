@@ -1,0 +1,12 @@
+=== Interaction 1 ===
+Response:
+```SEARCH_HF
+cifar10 image classification
+```
+
+=== Interaction 2 ===
+Response:
+```SEARCH_HF
+cifar-10 dataset
+```
+

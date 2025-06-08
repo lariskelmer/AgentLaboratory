@@ -1,0 +1,111 @@
+# If you want to have user input or be a human-in-the-loop
+copilot-mode: True
+
+# Here is the research prompt. If num-papers-to-write > 1, you can treat this as a "research direction" otherwise it can be *very* specific and can be treated as a full research idea
+#research-topic: "Your goal is to design reasoning and prompt engineering techniques to maximize accuracy on the entire 500 test questions of MATH500 benchmark. Your idea should be very novel."
+research-topic: "The goal is to design and evaluate a new technique for optimizing deep learning models for real-time image classification on resource-constrained edge devices, aiming to maximize accuracy while minimizing inference latency and power consumption."
+deepseek-api-key:
+# Here you can put your OpenAI API key--if you don't have one or OpenAI doesn't work for you, you can also instead use `deepseek-api-key`
+api-key:
+#deepseek-api-key:
+
+# Agent Laboratory backend
+llm-backend: "deepseek-chat"
+# Literature review backend
+lit-review-backend: "deepseek-chat"
+
+# Base language
+language: "English"
+
+# Number of arxiv papers to lit review
+num-papers-lit-review: 10
+# Total number of papers to write in sequence
+num-papers-to-write: 1
+# Do you want to run multiple agent labs in parallel?
+parallel-labs: False
+
+# Total mle-solver steps per lab
+mlesolver-max-steps: 5
+# Total paper-solver steps per lab
+papersolver-max-steps: 3
+# The lab index for this lab (used for parallel runs)
+lab-index: 1
+# If you want to load an existing save
+load-existing: True
+load_previous: True
+load-previous: True
+
+# If fail, run exception?
+except-if-fail: False
+# Compile latex into PDFs during paper-solver
+compile-latex: False
+
+# Task notes
+task-notes:
+  plan-formulation:
+    # General objective
+    - "You must propose an original research idea focused on optimizing models for image classification on edge devices (Edge AI)."
+    - "Your focus will be to design **ONE** specific and feasible experiment, detailing: the proposed technique, a baseline for comparison, evaluation metrics, and the experimental environment (device and dataset)."
+
+    # Research focus and scope definition
+    - "Begin by clearly defining the research scope within Edge AI: identify subtopics such as popular models, edge-specific optimization techniques, quantization, structured pruning, tailored distillation, federated learning, privacy, latency, and energy consumption."
+    - "The optimization technique you propose must be **genuinely innovative**, not a trivial adaptation of existing methods. Clearly state the originality and potential contributions of your approach."
+    - "Specify the base model (e.g., MobileNetV2 without optimization), the target edge device (e.g., Raspberry Pi 4 with X GB RAM), and the dataset (e.g., CIFAR-10 or an adapted ImageNet subset)."
+    - "List the metrics to be measured: accuracy, latency, model size, energy consumption. Describe your methodology for measuring each."
+    - "Ensure the experiment is **reproducible, modular, and feasible** with typical academic resources."
+
+    # Literature search and selection strategy
+    - "Formulate a search query using precise keywords and/or Boolean logic to collect recent peer-reviewed articles on optimization techniques for Edge AI. Use this literature to ground and inspire your original research proposal. Justify your query choices."
+    - "Justify your keyword selection and explain how your query captures the relevant subtopics and technical directions."
+    - "Describe a **systematic methodology** to search for and sample a representative subset of peer-reviewed scientific articles, preferably open-access and published within the last 5 years."
+    - "This methodology should aim to select articles with clear research aims, context, value, and findings."
+    - "Prioritize articles with clear goals, verifiable technical contributions, and relevance to your proposed problem."
+
+    # Output structure
+    - "Propose a structured outline for organizing the final literature review document. Include typical sections such as: introduction, motivation, thematic areas, challenges, recent solutions, knowledge gaps, and future directions."
+
+    # Experimental plan structure and coherence
+    - "Ensure that the experimental plan is **logical, detailed, and cohesive**, suitable for publication or practical execution."
+    - 'DO NOT PLAN TOO LONG. Submit your plan soon.'
+    - "Use DeepSeek-Chat to perform this task."
+
+  data-preparation:
+  # - 'Instruções para a preparação dos dados, referências, datasets, etc.'
+    - 'Use a public, well-documented dataset for image classification, suitable for experimentation on edge devices (e.g. CIFAR-10, or a reduced/adapted version of a larger dataset).'
+    - "Describe all preprocessing and data augmentation steps necessary to improve training efficiency or inference quality on edge devices."
+    - 'Here is a sample code you can use to load CIFAR-10\nfrom datasets import load_dataset\ncifar10_test_set = load_dataset("cifar10")["test"]\n# Para carregar o conjunto de treino, você usaria:\n# cifar10_train_set = load_dataset("cifar10")["train"]'
+  
+  running-experiments:
+  # - 'Instruções sobre como rodar experimentos, código, parâmetros, limitações, etc.'
+    - "For all strings you instantiate you must use triple quotes (''')"
+    - "Use the appropriate tools and libraries for edge deployment and inference (e.g., TensorFlow Lite, PyTorch Mobile, ONNX Runtime)."
+    - "Perform real inference on a simulated environment that approximates edge constraints."
+    - "Measure and report key metrics, including: accuracy, latency (in milliseconds), model size (in MB), and power consumption (if measurable)."
+    - "Ensure code is modular and well-documented. Include configuration parameters and execution instructions for reproducibility."
+    - "Use parallel processing where appropriate to optimize batch inference or performance evaluations."
+    - "Record observations related to system behavior, execution stability, and resource usage."
+    - "If you encounter errors during execution, log them and attempt to correct them using reflection-based iteration."
+    - 'Your plan should be reproducible and structured for future generalization'
+    - 'Use the following code to inference deepseek-chat\nresponse = query_deepseekv3(prompt=prompt, system=system_prompt)'
+
+  results-interpretation:
+  # - 'Instruções sobre como interpretar os resultados, comparar, validar, etc.'
+    - "Analyze the results obtained from the real execution of your technique, comparing them to the defined baseline (e.g., MobileNetV2 without optimization)."
+    - "Use the collected metrics (accuracy, latency, model size, power usage) to assess the effectiveness of your method."
+    - "Discuss observed trade-offs and evaluate whether your optimization improves edge applicability without sacrificing too much model performance."
+    - 'Compare your results (qualitatively, if not directly) with those of related work identified in the literature review.'
+    - 'Compare findings across multiple papers for consistency.'
+    - "Evaluate limitations or edge-case failures encountered during execution and how they may impact the feasibility of the proposed solution."
+    - 'Consider limitations or biases in the retrieved data and their possible impact on conclusions.'
+    - "Summarize key insights from the experiment, highlighting both practical gains and research-relevant discoveries or questions."
+
+  report-writing:
+  # - 'Instruções sobre como escrever o relatório, formato, referências, estrutura, tom, métricas, etc.'
+    - 'Structure the report into coherent sections: introduction, literature review, methodology, challenges, solutions, and future directions.'
+    - 'Ensure all referenced papers are properly cited using a standard citation format (e.g., APA, IEEE).'
+    - 'Write the literature review in a formal academic tone that is clear and accessible to researchers in the field.'
+    - 'Clearly present the experimental methodology, the edge device used, the results obtained (including efficiency metrics), and the interpretation of these results.'
+    - 'Follow the standard structure of an academic paper, as detailed in the AgentLaboratory paper for `paper-solver` [cite: 136, 139].'
+    - 'Use LaTeX for mathematical expressions and figures, ensuring clarity and professionalism in presentation.'
+    - 'Use the following code to generate LaTeX\nresponse = query_deepseekv3(prompt=prompt, system=system_prompt)'
+    - 'DO NOT COMPILE YOUR LATEX. Just generate the code.'

@@ -1,0 +1,229 @@
+=== Interaction 1 ===
+Response:
+```SUMMARY
+real-time edge image classification optimization
+```
+
+=== Interaction 2 ===
+Response:
+```FULL_TEXT
+2409.08943v1
+```
+
+=== Interaction 3 ===
+Response:
+```SUMMARY
+edge device image classification optimization
+```
+
+=== Interaction 4 ===
+Response:
+```FULL_TEXT
+2307.04443v1
+```
+
+=== Interaction 5 ===
+Response:
+```ADD_PAPER
+2409.08943v1
+This paper presents a novel approach for joint image denoising and classification optimized for edge devices. The authors propose an integrated architecture that shares an encoder between denoising and classification tasks, along with modifications to Neural Architecture Search (NAS) to optimize for target latency, accuracy, and denoising performance. Key experimental results show their NAS-designed models outperform manually designed alternatives, achieving 25.6 PSNR for denoising and 76.0% accuracy for classification on ImageNet-100 with 13.7ms latency. The integrated approach demonstrates superior human perception benefits compared to sequential models, particularly in noisy conditions.
+```
+
+=== Interaction 6 ===
+Response:
+```SUMMARY
+edge AI model compression for image classification
+```
+
+=== Interaction 7 ===
+Response:
+```FULL_TEXT
+2409.02134v1
+```
+
+=== Interaction 8 ===
+Response:
+```ADD_PAPER
+2409.02134v1
+This paper comprehensively evaluates model compression techniques (structured/unstructured pruning and dynamic quantization) for ConvNeXt models on edge devices. Key experimental results show: 1) OTOv3 structured pruning achieves 75% reduction in model size/parameters while maintaining accuracy; 2) Dynamic quantization achieves 95% parameter reduction with minimal accuracy drop; 3) Combined OTOv3+quantization yields 89.7% size reduction and 95% MACs reduction while improving accuracy by 3.8%. The compressed model demonstrates practical edge deployment with 92.5% accuracy and 20ms inference time on a laptop CPU.
+```
+
+=== Interaction 9 ===
+Response:
+```SUMMARY
+edge AI real-time image classification optimization
+```
+
+=== Interaction 10 ===
+Response:
+```FULL_TEXT
+2407.09562v3
+```
+
+=== Interaction 11 ===
+Response:
+```SUMMARY
+edge device real-time image classification optimization techniques
+```
+
+=== Interaction 12 ===
+Response:
+```FULL_TEXT
+2307.04443v1
+```
+
+=== Interaction 13 ===
+Response:
+```ADD_PAPER
+2307.04443v1
+This paper presents DCA-NAS, a neural architecture search method optimized for edge devices with constraints on model size and computational resources. The key innovation is formulating NAS as a constrained optimization problem that directly incorporates device memory and FLOPs constraints. The method uses weight sharing and channel bottleneck techniques to reduce search time while maintaining accuracy. Experiments on CIFAR-10, TinyImagenet and ImageNet show DCA-NAS can discover models 10-15x smaller than manual architectures with similar accuracy, while reducing search time by 4-17x compared to prior hardware-aware NAS approaches. The approach demonstrates strong transferability across datasets and maintains performance when varying resource constraints.
+```
+
+=== Interaction 14 ===
+Response:
+```SUMMARY
+edge AI image classification latency optimization techniques
+```
+
+=== Interaction 15 ===
+Response:
+```FULL_TEXT
+2107.12486v1
+```
+
+=== Interaction 16 ===
+Response:
+```ADD_PAPER
+2107.12486v1
+This paper investigates AI multi-tenancy techniques for edge devices, focusing on concurrent model executions (CME) and dynamic model placements (DMP) to optimize deep learning inference performance. The authors conduct extensive experiments on various edge devices (Jetson TX2/Nano, Raspberry Pi 4) and EdgeTPU accelerators using image classification models. Key findings show that CME can achieve 1.9-3.3× higher throughput by parallel execution, while DMP leveraging heterogeneous resources (GPU+EdgeTPU) achieves up to 3.8× throughput improvement. The paper provides valuable insights into resource contention, optimal concurrency levels, and tradeoffs between throughput and latency for real-time edge AI applications.
+```
+
+=== Interaction 17 ===
+Response:
+```SUMMARY
+edge device neural architecture search for image classification
+```
+
+=== Interaction 18 ===
+Response:
+```SUMMARY
+edge AI model compression for real-time classification
+```
+
+=== Interaction 19 ===
+Response:
+```SUMMARY
+edge device image classification latency optimization
+```
+
+=== Interaction 20 ===
+Response:
+```FULL_TEXT
+2210.06223v1
+```
+
+=== Interaction 21 ===
+Response:
+```ADD_PAPER
+2210.06223v1
+This paper proposes LASNet, a latency-aware spatial-wise dynamic network that optimizes inference efficiency for edge devices by performing coarse-grained spatially adaptive inference. The key innovation is a latency prediction model that guides algorithm design and scheduling optimization by considering hardware properties, achieving up to 46% latency reduction on Jetson TX2 GPUs while maintaining accuracy. Experimental results on ImageNet classification and COCO object detection demonstrate significant improvements in practical inference efficiency compared to pixel-level dynamic networks.
+```
+
+=== Interaction 22 ===
+Response:
+```SUMMARY
+edge AI image classification energy efficiency optimization
+```
+
+=== Interaction 23 ===
+Response:
+```FULL_TEXT
+2108.07879v1
+```
+
+=== Interaction 24 ===
+Response:
+```ADD_PAPER
+2108.07879v1
+This paper presents NeuRRAM, a resistive RAM-based compute-in-memory (CIM) chip that achieves unprecedented energy efficiency for edge AI applications. The key innovation is a cross-layer co-design approach that optimizes across device, circuit, architecture, and algorithm levels. The chip demonstrates 5-8x better energy efficiency than prior art while maintaining software-comparable accuracy (99.0% on MNIST, 85.7% on CIFAR-10) across diverse AI workloads including CNNs, LSTMs, and RBMs. The voltage-mode neuron circuit and transposable neurosynaptic array architecture enable flexible dataflow directions and variable bit-precision computation (1-6 bit inputs, 1-8 bit outputs).
+```
+
+=== Interaction 25 ===
+Response:
+```SUMMARY
+edge AI image classification hardware-software co-design
+```
+
+=== Interaction 26 ===
+Response:
+```SUMMARY
+edge AI image classification model compression co-design
+```
+
+=== Interaction 27 ===
+Response:
+```FULL_TEXT
+2409.02134v1
+```
+
+=== Interaction 28 ===
+Response:
+```SUMMARY
+edge AI image classification model optimization techniques
+```
+
+=== Interaction 29 ===
+Response:
+```FULL_TEXT
+2407.09562v3
+```
+
+=== Interaction 30 ===
+Response:
+```SUMMARY
+edge AI image classification model optimization co-design
+```
+
+=== Interaction 31 ===
+Response:
+```SUMMARY
+edge AI image classification hardware-aware neural architecture search
+```
+
+=== Interaction 32 ===
+Response:
+```FULL_TEXT
+2409.08943v1
+```
+
+=== Interaction 33 ===
+Response:
+```ADD_PAPER
+2409.08943v1
+This paper presents a novel approach for joint image denoising and classification optimized for edge devices. The authors propose an integrated architecture that shares an encoder between denoising and classification tasks, significantly improving efficiency. They modify a Neural Architecture Search (NAS) method to optimize for target latency, classification accuracy, and denoising performance simultaneously. Experimental results show their NAS-designed models outperform manually designed alternatives, achieving up to 76.4% classification accuracy while maintaining strong denoising performance (25.4 PSNR) at low latency (10-18ms). The integrated design reduces computational overhead compared to sequential approaches while preserving human-interpretable image quality.```
+
+=== Interaction 34 ===
+Response:
+```SUMMARY
+edge AI image classification dynamic computation optimization
+```
+
+=== Interaction 35 ===
+Response:
+```FULL_TEXT
+2107.12486v1
+```
+
+=== Interaction 36 ===
+Response:
+```ADD_PAPER
+2107.12486v1
+This paper investigates AI multi-tenancy techniques for edge devices, focusing on concurrent model executions (CME) and dynamic model placements (DMP) to optimize deep learning inference. The authors empirically evaluate these approaches on various edge devices (Jetson TX2/Nano, Raspberry Pi) and AI accelerators (EdgeTPU) using image classification tasks. Key findings show that CME improves throughput by 1.3-3.3× by running multiple models in parallel, while DMP achieves up to 3.8× higher throughput by strategically placing models across heterogeneous resources (CPU/GPU/EdgeTPU). The paper provides valuable insights into resource utilization patterns, concurrency limits, and performance trade-offs when deploying multiple DL models on edge devices.
+```
+
+=== Interaction 37 ===
+Response:
+```SUMMARY
+edge AI image classification adaptive inference optimization
+```
+

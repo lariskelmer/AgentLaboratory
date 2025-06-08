@@ -1,0 +1,44 @@
+=== Interaction 1 ===
+Response:
+```SUMMARY
+edge device deep learning optimization
+```
+
+=== Interaction 2 ===
+Response:
+```FULL_TEXT
+2009.00278v3
+```
+
+=== Interaction 3 ===
+Response:
+```ADD_PAPER
+2009.00278v3
+This paper presents two novel approaches for scaling up deep neural network (DNN) optimization for edge inference. The first approach reuses performance predictors built on a proxy device and leverages performance monotonicity to avoid rebuilding predictors for each new device. The second approach builds scalable performance predictors that estimate accuracy/latency/energy for any DNN-device pair, and uses a neural network-based optimizer to directly output optimal DNN designs. Experimental results show these methods significantly reduce optimization time while maintaining model performance across diverse edge devices.
+```
+
+=== Interaction 4 ===
+Response:
+```SUMMARY
+edge device real-time image classification optimization
+```
+
+=== Interaction 5 ===
+Response:
+```FULL_TEXT
+2409.08943v1
+```
+
+=== Interaction 6 ===
+Response:
+```ADD_PAPER
+2409.08943v1
+This paper presents a novel approach for joint image denoising and classification optimized for edge devices. The authors propose an integrated architecture that shares an encoder between denoising and classification tasks, along with modifications to Neural Architecture Search (NAS) to optimize for target latency, classification accuracy, and denoising performance. Experimental results show their NAS-designed models outperform manually designed alternatives, achieving significant improvements in both denoising (25.6dB PSNR) and classification (76% accuracy) while meeting real-time latency constraints (10-18ms). The approach demonstrates particular effectiveness in noisy environments common to edge applications like surveillance and medical imaging.
+```
+
+=== Interaction 7 ===
+Response:
+```SUMMARY
+edge device neural architecture search latency optimization
+```
+

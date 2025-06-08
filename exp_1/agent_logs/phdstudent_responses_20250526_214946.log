@@ -1,0 +1,111 @@
+=== Interaction 1 ===
+Response:
+```SUMMARY
+real-time edge image classification
+```
+
+=== Interaction 2 ===
+Response:
+```SUMMARY
+edge device deep learning optimization
+```
+
+=== Interaction 3 ===
+Response:
+```SUMMARY
+real-time edge image classification optimization
+```
+
+=== Interaction 4 ===
+Response:
+```FULL_TEXT
+2409.08943v1
+```
+
+=== Interaction 5 ===
+Response:
+```ADD_PAPER
+2409.08943v1
+This paper presents a novel approach for joint image denoising and classification optimized for edge devices. The authors propose an integrated architecture that shares an encoder between denoising and classification tasks, achieving better efficiency than sequential approaches. They modify a Neural Architecture Search (NAS) method to optimize for target latency, classification accuracy, and denoising performance simultaneously. Experimental results show their NAS-designed models outperform manually designed alternatives, with significant improvements in both denoising (25.6dB PSNR) and classification (76% accuracy) while maintaining real-time performance (13.7ms latency). The work demonstrates how edge-optimized architectures can balance computational constraints with perceptual quality for applications like surveillance and medical imaging.
+```
+
+=== Interaction 6 ===
+Response:
+```SUMMARY
+edge-optimized neural architecture search for image classification
+```
+
+=== Interaction 7 ===
+Response:
+```SUMMARY
+real-time image classification edge optimization techniques
+```
+
+=== Interaction 8 ===
+Response:
+```SUMMARY
+edge device deep learning model compression
+```
+
+=== Interaction 9 ===
+Response:
+```SUMMARY
+real-time edge image classification model optimization
+```
+
+=== Interaction 10 ===
+Response:
+```FULL_TEXT
+2208.00485v1
+```
+
+=== Interaction 11 ===
+Response:
+```ADD_PAPER
+2208.00485v1
+This paper presents a DQN-based adaptive edge offloading policy for image classification under token bucket rate constraints. The system uses a weak classifier on edge devices and can offload uncertain classifications to a stronger cloud model. The DQN policy learns to optimize offloading decisions by considering image arrival patterns, classification confidence correlations, and token bucket states. Experiments show the policy achieves 2.86× speedup at 1.0G FLOPs for ResNet50 while maintaining accuracy, with the DQN adding only 0.25ms overhead (1% of local inference time). The approach demonstrates effective real-time optimization under resource constraints.
+```
+
+=== Interaction 12 ===
+Response:
+```SUMMARY
+edge-optimized image classification model compression techniques
+```
+
+=== Interaction 13 ===
+Response:
+```SUMMARY
+real-time edge image classification model compression
+```
+
+=== Interaction 14 ===
+Response:
+```FULL_TEXT
+2409.02134v1
+```
+
+=== Interaction 15 ===
+Response:
+```ADD_PAPER
+2409.02134v1
+This paper evaluates model compression techniques (structured/unstructured pruning and dynamic quantization) on ConvNeXt models for edge deployment. Key results show: 1) OTOv3 pruning achieves 60-75% reductions in model size/parameters/MACs while increasing accuracy by 3.8% on CIFAR-10; 2) Dynamic quantization provides 71% size reduction and 95% parameter/MAC reduction with minimal accuracy loss; 3) Combined OTOv3+quantization achieves 89.7% size reduction and 95% parameter/MAC reduction while improving accuracy. The compressed model demonstrated 92.5% accuracy at 20ms inference time on edge hardware, validating effectiveness for real-time applications.
+```
+
+=== Interaction 16 ===
+Response:
+```SUMMARY
+edge-optimized real-time image classification architectures
+```
+
+=== Interaction 17 ===
+Response:
+```SUMMARY
+lightweight CNN architectures for edge image classification
+```
+
+=== Interaction 18 ===
+Response:
+```SUMMARY
+real-time edge image classification model compression and optimization
+```
+

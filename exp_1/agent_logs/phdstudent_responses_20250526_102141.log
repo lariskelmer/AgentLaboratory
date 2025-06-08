@@ -1,0 +1,25 @@
+=== Interaction 1 ===
+Response:
+```SUMMARY
+edge device deep learning optimization
+```
+
+=== Interaction 2 ===
+Response:
+```FULL_TEXT
+2009.00278v3
+```
+
+=== Interaction 3 ===
+Response:
+```ADD_PAPER
+2009.00278v3
+This paper presents two novel approaches for scaling up deep neural network (DNN) optimization for edge inference. The first approach reuses performance predictors built on a proxy device and leverages performance monotonicity to avoid rebuilding predictors for each new device. The second approach builds scalable performance predictors that estimate accuracy/latency/energy for any DNN-device pair, and uses a neural network-based optimizer to directly output optimal DNN designs. Experimental results show these methods significantly reduce optimization time while maintaining model performance across diverse edge devices.
+```
+
+=== Interaction 4 ===
+Response:
+```SUMMARY
+edge device real-time image classification optimization
+```
+
